@@ -1,0 +1,2 @@
+# monorepo
+lerna + pnpm + workspace
