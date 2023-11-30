@@ -1,0 +1,38 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:com": "dumi dev",
+    "dev:pack": "npm run storybook",
+    "buildAll": "node scripts/build.js",
+    "publishAll": "node scripts/publish.js",
+    "select-version": "sh scripts/select-version.sh",
+    "storybook": "storybook dev -p 9001 -c .storybook",
+    "scBuild": "lerna run build --scope",
+    "doc": "npm run storybook",
+    "doc:build": "storybook build --docs -c .storybook-build"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@google/model-viewer": "^3.3.0",
+    "@storybook/addon-essentials": "^7.0.20",
+    "@storybook/react": "^7.0.20",
+    "@storybook/react-webpack5": "^7.0.20",
+    "babel-plugin-import": "^1.13.6",
+    "cheerio": "^1.0.0-rc.12",
+    "css-loader": "^6.8.1",
+    "dumi": "^2.1.15",
+    "father": "^4.1.6",
+    "lerna": "^6.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.20",
+    "three": "^0.158.0"
+  }
+}

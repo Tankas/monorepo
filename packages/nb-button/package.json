@@ -1,0 +1,32 @@
+{
+  "name": "nb-button",
+  "version": "1.0.10",
+  "description": "> TODO: description",
+  "author": "tanka",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://localhost:4873/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Tankas/monorepo.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@nobook/nb-button.test.js",
+    "build": "father build"
+  },
+  "dependencies": {
+  }
+}
